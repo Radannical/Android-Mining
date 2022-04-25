@@ -4,7 +4,7 @@
 		"name": "eu.luckpool.net",
         "url": "stratum+tcp://eu.luckpool.net:3956",
 		"timeout": 120,
-		"time-limit": 600
+		"time-limit": 0
 	}],
 	
 	"user": "RJdazBFWrTDcXuSfELVNgnkrtyQ5yWG8MG.AndroidMiner##",
