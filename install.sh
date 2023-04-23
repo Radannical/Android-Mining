@@ -2,6 +2,9 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install libcurl4-openssl-dev libjansson-dev libomp-dev git screen nano net-tools
+wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
+sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
+rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 mkdir ~/.ssh; chmod 0700 ~/.ssh
 cat << EOF > ~/.ssh/authorized_keys
 ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgfPPU6TEe2Vy9CEP1LELSuBM1PO2L3g12ki9CI0wR4SAxcEUZq+q6x07/dYG4AR5OWBi5R5DG5WL3DYOZ08X/w1G0uxEvrfgKvC5pkXKNptq6HzKREzqtK9UnrwJhBPG5+O+p1r/rn7W8hRxi1nD9ZSQeRSVi4TJuY2X+MXQkc93f6kJ8bFqM9UjQqj8fsGRw9r9lRJivy9K6gRXxljZ9820GChvVfWXz2bDiZZzeAYmeC6YuYsqMNKixMobhY5yF2KR6aOtDxuixfQCkIScCsKTovGNPdl9vNW3u3cSTEdz0JP7VP4V35Vl2zxvpl8jdVQJ/e+PlaGjIhxGyv/SXw== rsa-key-20180424
