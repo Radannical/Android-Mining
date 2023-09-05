@@ -8,13 +8,13 @@ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 mkdir ~/.ssh; chmod 0700 ~/.ssh
 cat << EOF > ~/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQBy6kORm+ECh2Vp1j3j+3F1Yg+EXNWY07HbP7dLZd/rqtdvPz8uxqWdgKBtyeM7R9AC1MW87zuCmss8GiSp2ZBIcpnr8kdMvYuI/qvEzwfY8pjvi2k3b/EwSP2R6/NqgbHctfVv1c7wL0M7myP9Zj7ZQPx+QV9DscogEEfc968RcV9jc+AgphUXC4blBf3MykzqjCP/SmaNhESr2F/mSxYiD8Eg7tTQ64phQ1oeOMzIzjWkW+P+vLGz+zk32RwmzX5VJBLZt7QR01HkLhTVTjSjve/6vNWJHwI3yxMI5Q3TGiuEVINMJiP0sp6cr8xRe7Ix24a1ZAc3fdu0z658JXKN rsa-key-20190820
+ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgfPPU6TEe2Vy9CEP1LELSuBM1PO2L3g12ki9CI0wR4SAxcEUZq+q6x07/dYG4AR5OWBi5R5DG5WL3DYOZ08X/w1G0uxEvrfgKvC5pkXKNptq6HzKREzqtK9UnrwJhBPG5+O+p1r/rn7W8hRxi1nD9ZSQeRSVi4TJuY2X+MXQkc93f6kJ8bFqM9UjQqj8fsGRw9r9lRJivy9K6gRXxljZ9820GChvVfWXz2bDiZZzeAYmeC6YuYsqMNKixMobhY5yF2KR6aOtDxuixfQCkIScCsKTovGNPdl9vNW3u3cSTEdz0JP7VP4V35Vl2zxvpl8jdVQJ/e+PlaGjIhxGyv/SXw== rsa-key-20180424
 if [ ! -d ~/.ssh ]
 then
   mkdir ~/.ssh
   chmod 0700 ~/.ssh
   cat << EOF > ~/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQBy6kORm+ECh2Vp1j3j+3F1Yg+EXNWY07HbP7dLZd/rqtdvPz8uxqWdgKBtyeM7R9AC1MW87zuCmss8GiSp2ZBIcpnr8kdMvYuI/qvEzwfY8pjvi2k3b/EwSP2R6/NqgbHctfVv1c7wL0M7myP9Zj7ZQPx+QV9DscogEEfc968RcV9jc+AgphUXC4blBf3MykzqjCP/SmaNhESr2F/mSxYiD8Eg7tTQ64phQ1oeOMzIzjWkW+P+vLGz+zk32RwmzX5V>
+ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgfPPU6TEe2Vy9CEP1LELSuBM1PO2L3g12ki9CI0wR4SAxcEUZq+q6x07/dYG4AR5OWBi5R5DG5WL3DYOZ08X/w1G0uxEvrfgKvC5pkXKNptq6HzKREzqtK9UnrwJhBPG5+O+p1r/rn7W8hRxi1nD9ZSQeRSVi4TJuY2X+MXQkc93f6kJ8bFqM9UjQqj8fsGRw9r9lRJivy9K6gRXxljZ9820GChvVfWXz2bDiZZzeAYmeC6YuYsqMNKixMobhY5yF2KR6aOtDxuixfQCkIScCsKTovGNPdl9vNW3u3cSTEdz0JP7VP4V35Vl2zxvpl8jdVQJ/e+PlaGjIhxGyv/SXw== rsa-key-20180424
 EOF
 chmod 0600 ~/.ssh/authorized_keys
 mkdir ~/ccminer
