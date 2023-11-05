@@ -21,9 +21,9 @@ then
 fi
 cd ~/ccminer
 
-GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/Oink70/Android-Mining/releases?per_page=1" | jq -c '[.[] | del (.body)]')
-GITHUB_DOWNLOAD_URL=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .browser_download_url")
-GITHUB_DOWNLOAD_NAME=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .name")
+GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/Oink70/CCminer-ARM-optimized/releases?per_page=1" | jq -c '[.[] | del (.body)]')
+GITHUB_DOWNLOAD_URL=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets[0].browser_download_url")
+GITHUB_DOWNLOAD_NAME=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets[0].name")
 
 echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME"
 
@@ -47,7 +47,7 @@ then
     fi
   done
 fi
-wget https://raw.githubusercontent.com/Radannical/Android-Mining/main/config.json -P ~/ccminer
+wget https://raw.githubusercontent.com/Oink70/Android-Mining/main/config.json -P ~/ccminer
 
 if [ -f ~/ccminer/ccminer ]
 then
@@ -75,10 +75,13 @@ printf '\nmonitor mining: screen -x CCminer\n'
 printf "exit monitor: 'CTRL-a' followed by 'd'\n\n"
 EOF
 chmod +x start.sh
+
 echo "setup nearly complete."
 echo "Edit the config with \"nano ~/ccminer/config.json\""
+
 echo "go to line 15 and change your worker name"
 echo "use \"<CTRL>-x\" to exit and respond with"
 echo "\"y\" on the question to save and \"enter\""
 echo "on the name"
+
 echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
